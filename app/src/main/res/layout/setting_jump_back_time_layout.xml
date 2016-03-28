@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="300dp"
+              android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_jump_back_time_title"
+        android:text="Jump Back Time"
+        android:fontFamily="serif"
+        android:textSize="60px"
+        android:textColor="@color/ltGrey"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textColor="@color/ltGrey"
+            android:text="Seconds to jump: "/>
+        <EditText
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/setting_jump_back_time_edit"
+            android:fontFamily="serif"
+            android:textSize="10pt"
+            android:textColor="@color/ltGrey"
+            android:inputType="number"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_margin="30px"
+        android:background="@color/ltGrey"></View>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Game Lobby"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Players"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listView3"
+                android:headerDividersEnabled="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:id="@+id/imageView"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:src="@drawable/tricycle" />
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:id="@+id/imageView2"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:src="@drawable/map" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Invite Player"
+                android:id="@+id/invitePlayer" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Game"
+                android:id="@+id/startGame" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

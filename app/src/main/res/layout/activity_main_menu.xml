@@ -1,0 +1,106 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActivity"
+    android:background="#01b3d7"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lineracers"
+        android:id="@+id/title"
+        android:layout_gravity="top"
+        android:layout_weight="0.13"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/single" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hill"
+        android:id="@+id/mountains"
+        android:layout_gravity="bottom"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/boat"
+        android:id="@+id/boat"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-150dip"
+        />
+
+    <Button android:id="@+id/single"
+        android:layout_margin="5dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Singleplayer"
+        android:background="@drawable/pressed"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    <Button android:id="@+id/multi"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:text="Multiplayer"
+        android:background="@drawable/pressed"
+        android:layout_below="@+id/single"
+        android:layout_centerHorizontal="true"
+        />
+    <Button android:id="@+id/settings2"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:text="Settings"
+        android:background="@drawable/pressed"
+        android:layout_below="@+id/multi"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/leaderboard"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Leaderboard"
+        android:background="@drawable/pressed"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="38dp"
+        android:layout_alignBottom="@+id/mountains"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp" />
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Help"
+        android:background="@drawable/pressed"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@+id/leaderboard"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="31dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Some shitty button"
+        android:id="@+id/startGameplayActivityButton"
+        android:layout_below="@+id/settings2"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title"/>
+
+</RelativeLayout>
